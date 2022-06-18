@@ -1,23 +1,22 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Itim', cursive;
-}
+    font-family: 'Itim';
+} 
 
-.background {
+body {
     background-color: darkcyan;
-    height: 100vh;
-    padding-top: 1px;
 }
 
-/* buttons settings */
+/* buttons settings 
 .controls {
-    display: flex;
+    
     flex-direction: row;
-    justify-content: center;
+    align-content: center;
     align-items: center;
-    margin-top: 1em;
+    
 }
+*/
 
 .ticButton {
     background-color: lightgreen;
@@ -26,9 +25,9 @@
     border-radius: 8px;
     border: none;
     font-size: 30px;
-    margin-left: 1em;
     cursor: pointer;
-    margin-top: 70%;
+    margin-top: 25%;
+    margin-left: 10%;
 }
 
 .RPSbutton {
@@ -38,57 +37,56 @@
     border-radius: 8px;
     border: none;
     font-size: 30px;
-    margin-left: 1em;
     cursor: pointer;
-    margin-top: 70%;
+    margin-top: 25%;
+    margin-left: 10%;
 }
 
 .c4Button {
     background-color: cyan;
     color: black;
+    margin-top: 25%;
+    margin-left: 10%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
     padding: 15px;
     border-radius: 8px;
-    border: none;
-    font-size: 30px;
-    margin-left: 1em;
-    cursor: pointer;
-    margin-top: 70%;
+    position: absolute;
 }
 
 /* setting for the titles */
-
-.titles {
-    font-family: 'Itim', cursive;;
-}
-
 .welcomeTitle {
+    margin-top: -20%;
+    font-size: 60px;
+    position: relative;
     text-align: center;
-    margin-top: -60%;
-    font-size: 70px;
 }
 
 /* Settings for the images */
 .RPSpic {
-    margin-top: 52%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 26%;
+    margin-top: 17%;
+    margin-left: 38%;
+    position: absolute;
+    width: 15%;
     height: 15%;
     border: none;
 }
 
 .c4Pic {
-    margin-top: -25.5%;
+    margin-top: 17%;
+    margin-left: 68%;
+    width: 15%;
+    height: 15%;
     position: absolute;
     border: none;
 }
 
 .tictactoePic {
-    margin-top: 52%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 26%;
-    height: 15%;
+    margin-top: 17%;
+    margin-left: 9%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
     border: none;
 }
