@@ -8,16 +8,6 @@ body {
     background-color: darkcyan;
 }
 
-/* buttons settings 
-.controls {
-    
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    
-}
-*/
-
 .ticButton {
     background-color: lightgreen;
     color: black;
@@ -66,8 +56,10 @@ body {
 /* Settings for the images */
 .RPSpic {
     margin-top: 17%;
-    margin-left: 33%;
+    margin-left: 35%;
     position: absolute;
+    align-content: center;
+    align-items: center;
     width: 250px;
     height: 180px;
     border: none;
@@ -89,4 +81,11 @@ body {
     height: 180px;
     position: absolute;
     border: none;
+}
+
+.monkeyPic {
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    margin-top: 60%;
 }
