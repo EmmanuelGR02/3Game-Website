@@ -12,16 +12,17 @@
             <div class="funnyPic" id="funnyPic"></div>
         </section>
 
-        <button class="ticButton" onclick="tictactoe()" id="ticButton">TicTacToe!</button>
-        <button class="RPSbutton" onclick="RPS()" id="RPSbutton">Rock Paper Scissors!</button>
-        <button class="c4Button" onclick="c4()" id="c4Button">Connect Four!</button>
-        
-        <h1 class="welcomeTitle" id="welcomeTitle">Welcome to the 3Game Website!!</h1>
+        <div class="buttons" id="hideaway">
+            <button class="ticButton" onclick="tictactoe(); dissapear()" id="ticButton">TicTacToe!</button>
+            <button class="RPSbutton" onclick="RPS(); dissapear()" id="RPSbutton">Rock Paper Scissors!</button>
+            <button class="c4Button" onclick="c4(); dissapear()" id="c4Button">Connect Four!</button>
 
-        <img class="RPSpic" id="RPSpic" src="RPSpic.jpg">
-        <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
-        <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
+            <h1 class="welcomeTitle" id="welcomeTitle">Welcome to the 3Game Website!!</h1>
 
+            <img class="RPSpic" id="RPSpic" src="RPSpic.jpg">
+            <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
+            <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
+        </div>
     </body>
 
 </html>

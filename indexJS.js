@@ -27,7 +27,7 @@ function RPS() {
     } else {
         randPic();
     }
-    setTimeout(() => window.location.reload(), 2000);
+    realoadPage();
 }
 
 function tictactoe() {
@@ -47,7 +47,7 @@ function tictactoe() {
     } else {
         randPic();
     }
-    setTimeout(() => window.location.reload(), 2000);
+    realoadPage();
 }
 
 function c4() {
@@ -67,12 +67,16 @@ function c4() {
     } else {
         randPic();
     }
-    setTimeout(() => window.location.reload(), 2000);
+    realoadPage();
 }
 
 function randNum() {
     var randNum = Math.floor(Math.random() * 8) + 1;
     return randNum;
+}
+
+function realoadPage() {
+    return setTimeout(() => window.location.reload(), 2000);
 }
 
 function randPic() {
@@ -107,4 +111,9 @@ function randPic() {
          return div.appendChild(img);
     }
 
+}
+
+function dissapear() {
+    document.getElementById("hideaway").style.display="none";
+    
 }
