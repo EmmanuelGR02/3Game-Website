@@ -48,3 +48,32 @@ function c4() {
     alert("I will now show a pic of u for 3 seconds ;)");
     setTimeout(() => window.location.reload(), 2000);
 }
+
+function randPic() {
+    var randNum = Math.floor(Math.random() * 11);
+
+    if (randNum = 0) {
+
+    } else if(randNum == 1) {
+
+    } else if(randNum == 2) {
+
+    } else if(randNum == 3) {
+
+    } else if(randNum == 4) {
+
+    } else if(randNum == 5) {
+
+    } else if(randNum == 6) {
+
+    } else if(randNum == 7) {
+
+    } else if(randNum == 8) {
+
+    } else if(randNum == 9) {
+
+    } else if(randNum == 10) {
+
+    }
+    
+}
