@@ -11,69 +11,100 @@ function userName() {
 }
 
 function RPS() {
-    let message = (userName() + " is a trash ass name");
-    var img = document.createElement("img");
-
-    var div = document.getElementById("monkey");
-    img.src = "monkeyPic.jpg";
-    div.appendChild(img);
-
-    alert(message);
-    alert("I will now show a pic of u for 3 seconds ;)");
+    var un = userName();
+    alert("I will now show a pic of " + un + " for 3 seconds ;)");
+    
+    if (un == "KEVIN") {
+        var img = document.createElement("img");
+        var div = document.getElementById("funnyPic");
+        img.src = "kevin.png";
+        div.appendChild(img);
+    } else if (un == "RIQUE") {
+        var img = document.createElement("img");
+        var div = document.getElementById("funnyPic");
+        img.src = "riqueButt.jpeg";
+        div.appendChild(img);
+    } else {
+        randPic();
+    }
     setTimeout(() => window.location.reload(), 2000);
 }
 
 function tictactoe() {
-    let message = (userName() + " is a dumb name");
-    var img = document.createElement("img");
-
-    var div = document.getElementById("beetlejuice");
-    img.src = "beetlejuice.jpg";
-    div.appendChild(img);
-
-    alert(message);
-    alert("I will now show a pic of u for 3 seconds ;)");
+    var un = userName();
+    alert("I will now show a pic of " + un + " for 3 seconds ;)");
+    
+    if (un == "KEVIN") {
+        var img = document.createElement("img");
+        var div = document.getElementById("funnyPic");
+        img.src = "kevin.png";
+        div.appendChild(img);
+    } else if (un == "RIQUE") {
+        var img = document.createElement("img");
+        var div = document.getElementById("funnyPic");
+        img.src = "riqueButt.jpeg";
+        div.appendChild(img);
+    } else {
+        randPic();
+    }
     setTimeout(() => window.location.reload(), 2000);
 }
 
 function c4() {
-    let message = (userName() + " is an alpha name");
-    var img = document.createElement("img");
+    var un = userName();
+    alert("I will now show a pic of " + un + " for 3 seconds ;)");
 
-    var div = document.getElementById("chad");
-    img.src = "chad.jpg";
-    div.appendChild(img);
-
-    alert(message);
-    alert("I will now show a pic of u for 3 seconds ;)");
+    if (un == "KEVIN") {
+        var img = document.createElement("img");
+        var div = document.getElementById("funnyPic");
+        img.src = "kevin.png";
+        div.appendChild(img);
+    } else if (un == "RIQUE") {
+        var img = document.createElement("img");
+        var div = document.getElementById("funnyPic");
+        img.src = "riqueButt.jpeg";
+        div.appendChild(img);
+    } else {
+        randPic();
+    }
     setTimeout(() => window.location.reload(), 2000);
 }
 
+function randNum() {
+    var randNum = Math.floor(Math.random() * 8) + 1;
+    return randNum;
+}
+
 function randPic() {
-    var randNum = Math.floor(Math.random() * 11);
+    var num = randNum();
 
-    if (randNum = 0) {
+    var img = document.createElement("img");
+    var div = document.getElementById("funnyPic");
 
-    } else if(randNum == 1) {
-
-    } else if(randNum == 2) {
-
-    } else if(randNum == 3) {
-
-    } else if(randNum == 4) {
-
-    } else if(randNum == 5) {
-
-    } else if(randNum == 6) {
-
-    } else if(randNum == 7) {
-
-    } else if(randNum == 8) {
-
-    } else if(randNum == 9) {
-
-    } else if(randNum == 10) {
-
+    if (num == 1) {
+        img.src = "monkeyPic.jpg";
+        return  div.appendChild(img);
+    } else if (num == 2) {
+        img.src = "chad.jpg";
+        return div.appendChild(img);
+    } else if (num == 3) {
+        img.src = "beetlejuice.jpg";
+        return  div.appendChild(img);
+    } else if (num == 4) {
+        img.src = "funnyBDude.jpg";
+        return div.appendChild(img);
+    } else if (num == 5) {
+        img.src = "uglyFish.jpg";
+        return div.appendChild(img);
+    } else if (num == 6) {
+        img.src = "uglyMessi.jpg";
+        return div.appendChild(img);
+    } else if (num == 7) {
+        img.src = "uglyRat.jpg";
+        return div.appendChild(img);
+    } else if (num == 8) {
+        img.src = "uglyRonaldo.jpg";
+         return div.appendChild(img);
     }
-    
+
 }
