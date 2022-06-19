@@ -89,3 +89,86 @@ body {
     text-align: center;
     margin-top: 60%;
 }
+
+/* ****** RPS SETTINGS START ****** */
+.RPSname {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    left: 16%;
+    top: 160px;
+}
+
+.RPSvs {
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    
+}
+
+.RPSopponentname {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    left: 75%;
+    top: 150px;
+}
+
+.RPScompImg {
+    position: absolute;
+    left: 75%;
+    top: 250px;
+}
+
+.RPSplayerImg {
+    position: absolute;
+    left: 15%;
+    top: 250px;
+}
+
+.RPSwinner {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    color: blanchedalmond;
+    font-size: 50px;
+}
+
+.RPSEnterButton {
+    background-color: #4CAF50; /* Green */
+    border-radius: 1px;
+    color: white;
+    padding: 15px 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.RPSEnterButton:hover {  
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type="text"]::placeholder {  
+    color: black;             
+    font-size: 25px;
+    padding-left: 10px; 
+}
+
+.reloadMessage {
+    position: absolute;
+    left: 40%;
+    top: 57%;
+    color: red;
+    font-size: 15px;
+}
+
+/* ******** RPS SETTINGS END ******** */

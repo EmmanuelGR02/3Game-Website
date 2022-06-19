@@ -1,45 +1,125 @@
 
-function userName() {
-    while (true) {
-        var name = prompt("Enter your name");
-        if (name == "") {
-            continue;
-        } else {
-            return name.toUpperCase();
-        }
-    }
+// *********************** START RPS GAME CODE ***********************
+//RPS MAIN
+
+let playerCnum = 0;
+let compCnum = 0;
+
+function RPSNameBox() {
+    showNameBox();
 }
 
 function RPS() {
-    var un = userName();
-    alert("I will now show a pic of " + un + " for 3 seconds ;)");
-    
-    if (un == "KEVIN") {
-        var img = document.createElement("img");
-        var div = document.getElementById("funnyPic");
-        img.src = "kevin.png";
-        div.appendChild(img);
-    } else if (un == "RIQUE") {
-        var img = document.createElement("img");
-        var div = document.getElementById("funnyPic");
-        img.src = "riqueButt.jpeg";
-        div.appendChild(img);
-    } else {
-        randPic();
+    let name = document.getElementById("RPSnameBox").value;
+    document.getElementById("RPSname").innerHTML = name.toLocaleUpperCase();
+    document.getElementById("RPSvs").innerHTML = "VS";
+    document.getElementById("RPSopponent").innerHTML = "COMPUTER";
+    playerChoice();
+    computerChoice();  
+    winner();
+    document.getElementById("reloadMessage").innerHTML = "(Please reaload the page to play again)";
+}
+   
+function computerChoice() {
+    var img = document.createElement("img");
+    var div = document.getElementById("RPScompPic");
+    var randNum = computerNum();
+
+    if (randNum == 1) {
+        img.src = "rock.jpg";
+        return div.appendChild(img);
     }
-    realoadPage();
+    else if (randNum == 2) {
+        img.src = "paper.jpg";
+        return div.appendChild(img);
+    }
+    else if (randNum == 3) {
+        img.src = "scissors.jpg";
+        return div.appendChild(img);
+    }
+        
 }
 
-function tictactoe() {
-    var un = userName();
-    alert("I will now show a pic of " + un + " for 3 seconds ;)");
+function playerChoice() {
+    var img = document.createElement("img");
+    var div = document.getElementById("RPSplayerPic");
+    var playerChoice = playerNum();
+
+    if (playerChoice == 1) {
+        img.src = "rock.jpg";
+        return div.appendChild(img);
+    }
+    else if (playerChoice == 2) {
+        img.src = "paper.jpg";
+        return div.appendChild(img);
+    }
+    else if (playerChoice == 3) {
+        img.src = "scissors.jpg";
+        return div.appendChild(img);
+    }
+
+}
+
+function playerNum() {
     
-    if (un == "KEVIN") {
+    while (true) { 
+        this.playerCnum = prompt("What is your choice? (1) rock, (2) paper, (3) scissors: ");
+        if (this.playerCnum < 1 || this.playerCnum > 3) {
+            continue;
+        }
+        return this.playerCnum;
+    }
+}
+
+function computerNum() {
+    this.compCnum = Math.floor(Math.random() * 3) + 1
+    return this.compCnum;
+}
+
+function winner() {
+    let compRand = this.compCnum;
+    let playerRand = this.playerCnum;
+    let playerName = document.getElementById("RPSnameBox").value;
+    let compWin = "The winner is: COMPUTER... Imagine loosing to a CPU, trash can";
+    let playerWin  = "The winner is " + playerName + "!";
+    let tie = "IT'S A TIE!";
+
+    if(playerRand == 1 && compRand == 1) {
+        return document.getElementById("RPSwinner").innerHTML = tie;
+    } else if (playerRand == 2 && compRand == 2) {
+        return document.getElementById("RPSwinner").innerHTML = tie;
+    } else if (playerRand == 3 && compRand == 3) {
+        return document.getElementById("RPSwinner").innerHTML = tie;
+    } else if(playerRand == 1 && compRand == 3) {
+        return document.getElementById("RPSwinner").innerHTML = playerWin;
+    } else if(playerRand == 2 && compRand == 1) {
+        return document.getElementById("RPSwinner").innerHTML = playerWin;
+    } else if(playerRand == 3 && compRand == 2) {
+        return document.getElementById("RPSwinner").innerHTML = playerWin;
+    } else {
+        return document.getElementById("RPSwinner").innerHTML = compWin;
+    }
+
+}
+
+function showNameBox() {
+    document.getElementById("RPSnameBox").style.display="block";
+    document.getElementById("RPSEnterButton").style.display="block";
+}
+// ************************ END RPS GAME CODE *********************
+
+
+function tictactoe() {
+    var promptName = prompt("Enter your name: ");
+    let name = promptName.toUpperCase();
+    alert("I will now show a pic of " + name + " for 3 seconds ;)");
+    
+    if (name == "KEVIN") {
         var img = document.createElement("img");
         var div = document.getElementById("funnyPic");
         img.src = "kevin.png";
         div.appendChild(img);
-    } else if (un == "RIQUE") {
+    } else if (name == "RIQUE") {
         var img = document.createElement("img");
         var div = document.getElementById("funnyPic");
         img.src = "riqueButt.jpeg";
@@ -51,15 +131,16 @@ function tictactoe() {
 }
 
 function c4() {
-    var un = userName();
-    alert("I will now show a pic of " + un + " for 3 seconds ;)");
+    var promptName = prompt("Enter your name: ");
+    let name = promptName.toUpperCase();
+    alert("I will now show a pic of " + name + " for 3 seconds ;)");
 
-    if (un == "KEVIN") {
+    if (name == "KEVIN") {
         var img = document.createElement("img");
         var div = document.getElementById("funnyPic");
         img.src = "kevin.png";
         div.appendChild(img);
-    } else if (un == "RIQUE") {
+    } else if (name == "RIQUE") {
         var img = document.createElement("img");
         var div = document.getElementById("funnyPic");
         img.src = "riqueButt.jpeg";
