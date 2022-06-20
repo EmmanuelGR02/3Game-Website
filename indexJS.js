@@ -1,14 +1,12 @@
 
 // *********************** START RPS GAME CODE ***********************
-//RPS MAIN
-
+// keeps track of players score and the number choice of the player to pick an item
 let playerCnum = 0;
 let compCnum = 0;
+let compScore = 0;
+let playerScore = 0;
 
-function RPSNameBox() {
-    showNameBox();
-}
-
+// RPS main function, collects all of the functions needed to display evrything on the HTML file
 function RPS() {
     let name = document.getElementById("RPSnameBox").value;
     document.getElementById("RPSname").innerHTML = name.toLocaleUpperCase();
@@ -18,8 +16,11 @@ function RPS() {
     computerChoice();  
     winner();
     document.getElementById("reloadMessage").innerHTML = "(Please reaload the page to play again)";
+    document.getElementById("RPSplayerScore").innerHTML = name + ": " + playerScore; 
+    document.getElementById("RPScompScore").innerHTML = "COMPUTER:" + compScore;
 }
-   
+
+// this sunction get the random number from compNum() function and connects that number to an specif picture
 function computerChoice() {
     var img = document.createElement("img");
     var div = document.getElementById("RPScompPic");
@@ -36,10 +37,10 @@ function computerChoice() {
     else if (randNum == 3) {
         img.src = "scissors.jpg";
         return div.appendChild(img);
-    }
-        
+    }  
 }
 
+// calls the playerNum() function to obtain the number chosen by the user to the choose the specific picture
 function playerChoice() {
     var img = document.createElement("img");
     var div = document.getElementById("RPSplayerPic");
@@ -57,11 +58,10 @@ function playerChoice() {
         img.src = "scissors.jpg";
         return div.appendChild(img);
     }
-
 }
 
+// Prompts the user to pic a number that corresponds to an specifit icture and stores it in "playerCnum"
 function playerNum() {
-    
     while (true) { 
         this.playerCnum = prompt("What is your choice? (1) rock, (2) paper, (3) scissors: ");
         if (this.playerCnum < 1 || this.playerCnum > 3) {
@@ -71,11 +71,13 @@ function playerNum() {
     }
 }
 
+// Randomizes a number between 1 and 3 that decides the picture chose by the computer
 function computerNum() {
     this.compCnum = Math.floor(Math.random() * 3) + 1
     return this.compCnum;
 }
 
+// This fuinction decides the winner depending on the number that they chose
 function winner() {
     let compRand = this.compCnum;
     let playerRand = this.playerCnum;
@@ -84,70 +86,43 @@ function winner() {
     let playerWin  = "The winner is " + playerName + "!";
     let tie = "IT'S A TIE!";
 
-    if(playerRand == 1 && compRand == 1) {
-        return document.getElementById("RPSwinner").innerHTML = tie;
-    } else if (playerRand == 2 && compRand == 2) {
-        return document.getElementById("RPSwinner").innerHTML = tie;
-    } else if (playerRand == 3 && compRand == 3) {
-        return document.getElementById("RPSwinner").innerHTML = tie;
-    } else if(playerRand == 1 && compRand == 3) {
-        return document.getElementById("RPSwinner").innerHTML = playerWin;
-    } else if(playerRand == 2 && compRand == 1) {
-        return document.getElementById("RPSwinner").innerHTML = playerWin;
-    } else if(playerRand == 3 && compRand == 2) {
-        return document.getElementById("RPSwinner").innerHTML = playerWin;
-    } else {
-        return document.getElementById("RPSwinner").innerHTML = compWin;
+    while (true) {
+        if(playerRand == 1 && compRand == 1) {
+            return document.getElementById("RPSwinner").innerHTML = tie;
+        } else if (playerRand == 2 && compRand == 2) {
+            return document.getElementById("RPSwinner").innerHTML = tie;
+        } else if (playerRand == 3 && compRand == 3) {
+            return document.getElementById("RPSwinner").innerHTML = tie;
+        } else if(playerRand == 1 && compRand == 3) {
+            playerScore ++;
+            return document.getElementById("RPSwinner").innerHTML = playerWin;
+        } else if(playerRand == 2 && compRand == 1) {
+            playerScore ++;
+            return document.getElementById("RPSwinner").innerHTML = playerWin;
+        } else if(playerRand == 3 && compRand == 2) {
+            playerScore ++;
+            return document.getElementById("RPSwinner").innerHTML = playerWin;
+        } else {
+            compScore ++;
+            return document.getElementById("RPSwinner").innerHTML = compWin;
+        }
     }
-
 }
 
+// this function displays the name box and the enter button, it is then to be used once the user chooses tp play RPS
 function showNameBox() {
     document.getElementById("RPSnameBox").style.display="block";
     document.getElementById("RPSEnterButton").style.display="block";
 }
+
 // ************************ END RPS GAME CODE *********************
-
-
-function tictactoe() {
-    var promptName = prompt("Enter your name: ");
-    let name = promptName.toUpperCase();
-    alert("I will now show a pic of " + name + " for 3 seconds ;)");
-    
-    if (name == "KEVIN") {
-        var img = document.createElement("img");
-        var div = document.getElementById("funnyPic");
-        img.src = "kevin.png";
-        div.appendChild(img);
-    } else if (name == "RIQUE") {
-        var img = document.createElement("img");
-        var div = document.getElementById("funnyPic");
-        img.src = "riqueButt.jpeg";
-        div.appendChild(img);
-    } else {
-        randPic();
-    }
-    realoadPage();
-}
 
 function c4() {
     var promptName = prompt("Enter your name: ");
     let name = promptName.toUpperCase();
     alert("I will now show a pic of " + name + " for 3 seconds ;)");
 
-    if (name == "KEVIN") {
-        var img = document.createElement("img");
-        var div = document.getElementById("funnyPic");
-        img.src = "kevin.png";
-        div.appendChild(img);
-    } else if (name == "RIQUE") {
-        var img = document.createElement("img");
-        var div = document.getElementById("funnyPic");
-        img.src = "riqueButt.jpeg";
-        div.appendChild(img);
-    } else {
-        randPic();
-    }
+    randPic();
     realoadPage();
 }
 

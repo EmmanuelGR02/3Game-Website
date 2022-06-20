@@ -97,7 +97,7 @@ body {
     font-weight: bolder;
     position: absolute;
     left: 16%;
-    top: 160px;
+    top: 220px;
 }
 
 .RPSvs {
@@ -106,7 +106,7 @@ body {
     font-weight: bold;
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 25%;
     
 }
 
@@ -116,19 +116,19 @@ body {
     font-weight: bolder;
     position: absolute;
     left: 75%;
-    top: 150px;
+    top: 220px;
 }
 
 .RPScompImg {
     position: absolute;
     left: 75%;
-    top: 250px;
+    top: 280px;
 }
 
 .RPSplayerImg {
     position: absolute;
     left: 15%;
-    top: 250px;
+    top: 280px;
 }
 
 .RPSwinner {
@@ -153,6 +153,20 @@ body {
     transition-duration: 0.4s;
 }
 
+.RPSresetButton {
+    top: 50%;
+    background-color: red; /* Green */
+    border-radius: 1px;
+    color: black;
+    padding: 15px 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
 .RPSEnterButton:hover {  
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -171,4 +185,58 @@ input[type="text"]::placeholder {
     font-size: 15px;
 }
 
+.RPSplayerScore {
+    color: lightgreen;
+    font-size: 30px;
+    position: absolute;
+    top: 190px;
+    left: 20%;
+}
+
+.RPScompScore {
+    color: lightcoral;
+    font-size: 30px;
+    position: absolute;
+    top: 190px;
+    left: 76%;
+}
+
 /* ******** RPS SETTINGS END ******** */
+
+
+/* ****** TICTACTOE SETTINGS START ****** */
+.ticBoard {
+    margin: 0 auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.ticCell {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.ticResetButton {
+    background-color: red;
+    color:white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    margin-left: 45%;
+    margin-top: 79%;
+    cursor: pointer;
+}
+
+/* ****** TICTACTOE SETTINGS END ****** */

@@ -2,24 +2,28 @@
 <html>
     <head>
         <title>3Game Website</title>
+        <!-- imports the css and javascript files that are being used to display everything -->
         <link rel="stylesheet" href="3Game.css">
         <script src="./indexJS.js"></script>
+        <script src="./tictactoe.js"></script>
     </head>
 
     <body>
         
+        <!-- *** TEMP ***-->
         <section class="randPics" id="randPics">
             <div class="funnyPic" id="funnyPic"></div>
         </section>
 
+        <!-- Displays the pictures chosen by the player and computer for the RPS game-->
         <div class="RPScompImg" id="RPScompPic"></div>
         <div class="RPSplayerImg" id="RPSplayerPic"></div>
 
-
+        <!-- Displays the main page title, pictures of the games, and buttons for the games-->
         <div class="buttons" id="hideaway">
-            <button class="ticButton" onclick="tictactoe(); dissapear()" id="ticButton">TicTacToe!</button>
-            <button class="RPSbutton" onclick="dissapear(); RPSNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
-            <button class="c4Button" onclick="c4(); dissapear()" id="c4Button">Connect Four!</button>
+            <button class="ticButton" onclick="dissapear(); ticMain()" id="ticButton">TicTacToe!</button>
+            <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
+            <button class="c4Button" onclick="dissapear(); c4()" id="c4Button">Connect Four!</button>
 
             <h1 class="welcomeTitle" id="welcomeTitle">Welcome to the 3Game Website!!</h1>
 
@@ -28,13 +32,39 @@
             <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
         </div>
 
+        <!-- Displays the name box to enter the users name, the Enter button and the Reset button -->
         <center><input type="text" id="RPSnameBox" style="font-size: 25px; display: none;" placeholder="Enter your name"/></center>
         <center><button class="RPSEnterButton"  style="display: none;" onclick="RPS()" id="RPSEnterButton" name="button" value="Enter" type="submit">Enter</button></center>
+        <center><button class="RPSresetButton"  style="display: none;" onclick="reset()" id="RPSresetButton" type="submit">RESET</button></center>
+
+        <!-- Info for the RPS game, like the user and computer name, score count and winner message -->
         <p class="RPSname" id="RPSname"></p>
         <p class="RPSvs" id="RPSvs"></p>
         <p class="RPSopponentname" id="RPSopponent"></p>
         <p class="RPSwinner" id="RPSwinner"></p>
         <p class="reloadMessage" id="reloadMessage"></p>
+        <h1 class="RPSplayerScore" id="RPSplayerScore"></h1>
+        <h1 class="RPScompScore" id="RPScompScore"></h1>
+
+        <!-- TICTACTOE GAME -->
+
+        <!-- Creates the bord for the game -->
+        <div class="ticBoard" id="ticBoard" style="display: none;">
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+            <div class="ticCell" data-cell></div>
+        </div>
+                   
+        <!-- RESET BUTTON -->
+        <button class="ticResetButton" id="ticResetButton" style="display: none;">RESET</button>
+
+
     </body>
 
 </html>
