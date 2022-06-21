@@ -8,13 +8,13 @@ let playerScore = 0;
 
 // RPS main function, collects all of the functions needed to display evrything on the HTML file
 function RPS() {
-    let name = document.getElementById("RPSnameBox").value;
-    document.getElementById("RPSname").innerHTML = name.toLocaleUpperCase();
+    winner();
+    let name = document.getElementById("RPSnameBox").value.toUpperCase();
+    //document.getElementById("RPSname").innerHTML = name.toLocaleUpperCase();
     document.getElementById("RPSvs").innerHTML = "VS";
-    document.getElementById("RPSopponent").innerHTML = "COMPUTER";
+    //document.getElementById("RPSopponent").innerHTML = "COMPUTER";
     playerChoice();
     computerChoice();  
-    winner();
     document.getElementById("reloadMessage").innerHTML = "(Please reaload the page to play again)";
     document.getElementById("RPSplayerScore").innerHTML = name + ": " + playerScore; 
     document.getElementById("RPScompScore").innerHTML = "COMPUTER:" + compScore;
