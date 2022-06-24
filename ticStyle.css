@@ -1,6 +1,6 @@
-*, *::after, *::before {
-    box-sizing: border-box;
-  }
+/* *, *::after, *::before { */
+    /* box-sizing: border-box; */
+  /* } */
   
   :root {
     --cell-size: 100px;
