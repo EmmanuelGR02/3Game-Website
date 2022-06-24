@@ -98,7 +98,7 @@ body {
 
 .RPSname {
     color: black;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bolder;
     position: absolute;
     left: 16%;
@@ -119,7 +119,7 @@ body {
 
 .RPSopponentname {
     color: black;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bolder;
     position: absolute;
     left: 75%;
@@ -188,15 +188,6 @@ input[type="text"]::placeholder {
     padding-left: 10px; 
 }
 
-.reloadMessage {
-    position: absolute;
-    left: 48%;
-    top: 30%;
-    color: red;
-    font-size: 20px;
-    transform: translate(-50%, -50%);
-}
-
 .RPSplayerScore {
     color: lightgreen;
     font-size: 30px;
@@ -215,43 +206,44 @@ input[type="text"]::placeholder {
     transform: translate(-50%, -50%);
 }
 
-/* ******** RPS SETTINGS END ******** */
-
-
-/* ****** TICTACTOE SETTINGS START ****** */
-.ticBoard {
-    margin: 0 auto;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
-    position: absolute;
-    top: 30%;
-    left: 35%;
-}
-
-.ticCell {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border: 1px solid white;
-    cursor: pointer;
-    font-size: 50px;
+.winning-message1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
     justify-content: center;
-}
-
-.ticResetButton {
-    background-color: red;
-    color:white;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    font-size: 20px;
-    position: relative;
-    margin-left: 45%;
-    margin-top: 82%;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+  }
+  
+  .winning-message1 button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
     cursor: pointer;
-    transform: translate(-50%, -50%);
-}
+  }
+  
+  .winning-message1 button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+  }
+  
+  .winning-message1.show {
+    display: flex;
+  }
 
-/* ****** TICTACTOE SETTINGS END ****** */
+  .ticTitle {
+    color: black;
+    text-decoration: wavy;
+    font-size: 100px;
+    top: 20px;
+    text-align: center;
+  }
+/* ******** RPS SETTINGS END ******** */
