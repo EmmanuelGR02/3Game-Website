@@ -10,33 +10,35 @@ body {
 
 .ticButton {
     background-color: lightgreen;
+    position: absolute;
     color: black;
     padding: 15px;
     border-radius: 8px;
     border: none;
     font-size: 30px;
     cursor: pointer;
-    margin-top: 25%;
-    margin-left: 10%;
+    top: 25%;
+    left: 10%;
 }
 
 .RPSbutton {
     background-color: lightcoral;
+    position: absolute;
     color: black;
     padding: 15px;
     border-radius: 8px;
     border: none;
     font-size: 30px;
     cursor: pointer;
-    margin-top: 25%;
-    margin-left: 10%;
+    top: 25%;
+    left: 34%;
 }
 
 .c4Button {
     background-color: cyan;
     color: black;
-    margin-top: 25%;
-    margin-left: 10%;
+    top: 25%;
+    left: 68%;
     font-size: 30px;
     border: none;
     cursor: pointer;
@@ -47,16 +49,17 @@ body {
 
 /* setting for the titles */
 .welcomeTitle {
-    margin-top: -20%;
+    top: 10%;
+    left: 10%;
     font-size: 60px;
-    position: relative;
+    position: absolute;
     text-align: center;
 }
 
 /* Settings for the images */
 .RPSpic {
-    margin-top: 17%;
-    margin-left: 35%;
+    top: 30%;
+    left: 35%;
     position: absolute;
     align-content: center;
     align-items: center;
@@ -66,8 +69,8 @@ body {
 }
 
 .c4Pic {
-    margin-top: 17%;
-    margin-left: 68%;
+    top: 30%;
+    left: 68%;
     width: 200px;
     height: 180px;
     position: absolute;
@@ -75,8 +78,8 @@ body {
 }
 
 .tictactoePic {
-    margin-top: 17%;
-    margin-left: 9%;
+    top: 30%;
+    left: 9%;
     width: 175px;
     height: 180px;
     position: absolute;
