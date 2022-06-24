@@ -17,7 +17,7 @@ body {
     border: none;
     font-size: 30px;
     cursor: pointer;
-    top: 25%;
+    top: 30%;
     left: 10%;
 }
 
@@ -30,14 +30,14 @@ body {
     border: none;
     font-size: 30px;
     cursor: pointer;
-    top: 25%;
+    top: 30%;
     left: 34%;
 }
 
 .c4Button {
     background-color: cyan;
     color: black;
-    top: 25%;
+    top: 30%;
     left: 68%;
     font-size: 30px;
     border: none;
@@ -58,30 +58,30 @@ body {
 
 /* Settings for the images */
 .RPSpic {
-    top: 30%;
+    top: 40%;
     left: 35%;
     position: absolute;
     align-content: center;
     align-items: center;
-    width: 250px;
-    height: 180px;
+    width: 24%;
+    height: 10%;
     border: none;
 }
 
 .c4Pic {
-    top: 30%;
+    top: 40%;
     left: 68%;
-    width: 200px;
-    height: 180px;
+    width: 20%;
+    height: 10%;
     position: absolute;
     border: none;
 }
 
 .tictactoePic {
-    top: 30%;
+    top: 40%;
     left: 9%;
-    width: 175px;
-    height: 180px;
+    width: 17%;
+    height: 10%;
     position: absolute;
     border: none;
 }

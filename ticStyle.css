@@ -1,15 +1,15 @@
-/* *, *::after, *::before { */
-    /* box-sizing: border-box; */
-  /* } */
+ *, *::after, *::before { 
+     box-sizing: border-box; 
+  } 
   
-  :root {
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size) * .9);
-  }
+  :root { 
+     --cell-size: 100px; 
+     --mark-size: calc(var(--cell-size) * .9); 
+  } 
   
-  /* body { */
-    /* margin: 0; */
-  /* } */
+  body { 
+     margin: 0; 
+  } 
   
   .board {
     width: 100vw;
