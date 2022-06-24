@@ -7,9 +7,9 @@
     --mark-size: calc(var(--cell-size) * .9);
   }
   
-  body {
-    margin: 0;
-  }
+  /* body { */
+    /* margin: 0; */
+  /* } */
   
   .board {
     width: 100vw;
