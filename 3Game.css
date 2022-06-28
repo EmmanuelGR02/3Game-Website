@@ -8,82 +8,117 @@ body {
     background-color: darkcyan;
 }
 
+.arrowText {
+    position: flex;
+    font-size: 70px;
+    color: #FCA101;
+    text-align: center;
+    padding: 25px;
+}
+
+.arrows {
+    text-align: center;
+    padding: 20px;
+}
+
+.ticArrow {
+    display: inline-block;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #FCA101;
+    transform: rotate(180deg);
+    margin-left: -0%;
+}
+
+.RPSarrow {
+    display: inline-block;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #FCA101;
+    transform: rotate(180deg);
+    margin-left: 20%;
+}
+
+.c4Arrow {
+    display: inline-block;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #FCA101;
+    transform: rotate(180deg);
+    margin-left: 30%;
+}
+
+.mainButtons {
+    justify-content: center;
+    text-align: center; 
+    margin-top: 12%;
+}
+
+.mainPics {
+    padding: 15px;
+    border-radius: 20px;
+    width: 110%;
+    margin-left: -5%;
+}
+
 .ticButton {
     background-color: lightgreen;
-    position: absolute;
     color: black;
     padding: 15px;
     border-radius: 8px;
     border: none;
-    font-size: 30px;
+    font-size: 40px; 
     cursor: pointer;
-    top: 30%;
-    left: 10%;
+    margin-left: -0%;
 }
 
 .RPSbutton {
     background-color: lightcoral;
-    position: absolute;
     color: black;
     padding: 15px;
     border-radius: 8px;
     border: none;
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
-    top: 30%;
-    left: 34%;
+    margin-left: 9%;
 }
 
 .c4Button {
     background-color: cyan;
     color: black;
-    top: 30%;
-    left: 68%;
-    font-size: 30px;
+    font-size: 40px;
     border: none;
     cursor: pointer;
     padding: 15px;
     border-radius: 8px;
-    position: absolute;
+    margin-left: 10%;
 }
 
 /* setting for the titles */
 .welcomeTitle {
-    top: 10%;
-    left: 10%;
-    font-size: 60px;
-    position: absolute;
+    position: flex;
+    top: 5%;
+    font-size: 80px;
     text-align: center;
 }
 
 /* Settings for the images */
 .RPSpic {
-    top: 40%;
-    left: 35%;
-    position: absolute;
-    align-content: center;
-    align-items: center;
+    height: 0.1%;
     width: 24%;
-    height: 10%;
-    border: none;
+    margin-left: 10%;
 }
 
 .c4Pic {
-    top: 40%;
-    left: 68%;
     width: 20%;
     height: 10%;
-    position: absolute;
-    border: none;
+    margin-left: 10%;
 }
 
 .tictactoePic {
-    top: 40%;
-    left: 9%;
     width: 17%;
     height: 10%;
-    position: absolute;
-    border: none;
+    margin-left: -0%;
 }
 
 .monkeyPic {

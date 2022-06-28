@@ -23,17 +23,28 @@
         <div class="RPSplayerImg" id="RPSplayerPic"></div>
 
         <!-- Displays the main page title, pictures of the games, and buttons for the games-->
-        <div class="buttons" id="hideaway">
-            <button class="ticButton" onclick="dissapear(); ticMain()" id="ticButton">TicTacToe!</button>
-            <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
-            <button class="c4Button" onclick="dissapear(); c4()" id="c4Button">Connect Four!</button>
-
-            <h1 class="welcomeTitle" id="welcomeTitle">Welcome to the 3Game Website!!</h1>
-
-            <img class="RPSpic" id="RPSpic" src="RPSpic.jpg">
-            <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
-            <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
-        </div>
+        <section class="mainButtons">
+            <div class="buttons" id="hideaway">
+                <h1 class="welcomeTitle" id="welcomeTitle">The 3Game Website!!</h1>
+                <section class="arrowText">
+                    <p>Pick any game to play!</p>
+                </section>
+                <section class="arrows">
+                    <p class="ticArrow"></p>
+                    <p class="RPSarrow"></p>
+                    <p class="c4Arrow"></p>
+                </section>
+                <button class="ticButton" onclick="dissapear(); ticMain()" id="ticButton">TicTacToe!</button>
+                <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
+                <button class="c4Button" onclick="dissapear(); c4()" id="c4Button">Connect Four!</button>
+                
+            <section class="mainPics">   
+                <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
+                <img class="RPSpic" id="RPSpic" src="rpsPicc.jpg">
+                <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
+            </section> 
+            </div>
+        </section>
 
         <!-- Displays the name box to enter the users name, the Enter button and the Reset button -->
         <center><input type="text" id="RPSnameBox" class="RPSnameBox" style="display: none;" placeholder="Enter your name"/></center>
