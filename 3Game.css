@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Itim';
+    height: 100px;
 } 
 
 body {
@@ -104,20 +105,20 @@ body {
 
 /* Settings for the images */
 .RPSpic {
-    height: 0.1%;
+    height: 200%;
     width: 24%;
     margin-left: 10%;
 }
 
 .c4Pic {
     width: 20%;
-    height: 10%;
+    height: 200%;
     margin-left: 10%;
 }
 
 .tictactoePic {
-    width: 17%;
-    height: 10%;
+    width: 18%;
+    height: 200%;
     margin-left: -0%;
 }
 
@@ -168,14 +169,14 @@ body {
 .RPScompImg {
     position: absolute;
     left: 75%;
-    top: 535px;
+    top: 500px;
     transform: translate(-50%, -50%);
 }
 
 .RPSplayerImg {
     position: absolute;
     left: 20%;
-    top: 535px;
+    top: 500px;
     transform: translate(-50%, -50%);
 }
 
