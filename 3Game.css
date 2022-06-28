@@ -248,7 +248,7 @@ input[type="text"]::placeholder {
 .winning-message1 {
     display: none;
     position: fixed;
-    top: 0;
+    top: 50%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -256,12 +256,12 @@ input[type="text"]::placeholder {
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
     flex-direction: column;
   }
   
   .winning-message1 button {
-    font-size: 5rem;
+    font-size: 3rem;
     background-color: white;
     border: 1px solid black;
     padding: .25em .5em;
