@@ -9,57 +9,77 @@ body {
     background-color: darkcyan;
 }
 
+
 .arrowText {
-    position: flex;
-    font-size: 70px;
+    font-size: 50px;
     color: #FCA101;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
+    border-radius: 20px;
 }
 
-.arrows {
-    text-align: center;
-    padding: 20px;
-}
 
-.ticArrow {
-    display: inline-block;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 40px solid #FCA101;
-    transform: rotate(180deg);
-    margin-left: -0%;
-}
-
-.RPSarrow {
-    display: inline-block;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 40px solid #FCA101;
-    transform: rotate(180deg);
-    margin-left: 20%;
-}
-
-.c4Arrow {
+/*.c4Arrow {
     display: inline-block;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-bottom: 40px solid #FCA101;
     transform: rotate(180deg);
     margin-left: 30%;
-}
+} */
 
 .mainButtons {
     justify-content: center;
     text-align: center; 
-    margin-top: 12%;
 }
 
-.mainPics {
+.ticMbutton {
+    margin-top: 7%;
+    margin-left: 3.5%;
+    text-align: center;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+.ticMpic {
+    margin-left: 3.5%;
+    margin-top: -.5%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.rpsMbutton {
+    margin-left: -7%;
+    margin-top: -5%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.rpsMpic {
+    margin-left: -7%;
+    margin-top: -.0%;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.c4Mbutton {
+    margin-left: -7%;
+    margin-top: 6.5%;
+    text-align: center;
     padding: 15px;
     border-radius: 20px;
-    width: 110%;
-    margin-left: -5%;
+}
+
+
+.c4Mpic {
+    margin-left: -7%;
+    margin-top: .3%;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
 }
 
 .ticButton {
@@ -245,6 +265,7 @@ input[type="text"]::placeholder {
     transform: translate(-50%, -50%);
 }
 
+ 
 .winning-message1 {
     display: none;
     position: fixed;
@@ -252,38 +273,38 @@ input[type="text"]::placeholder {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: rgba(0, 0, 0, .9); */
+    background-color: rgba(0, 0, 0, .9);
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-size: 3rem;
     flex-direction: column;
-  }
+}
   
-  .winning-message1 button {
+.winning-message1 button {
     font-size: 3rem;
     background-color: white;
     border: 1px solid black;
     padding: .25em .5em;
     cursor: pointer;
-  }
+}
  
   
-  .winning-message1 button:hover {
+.winning-message1 button:hover {
     background-color: black; 
     color: white;
     border-color: white;
-  }
+}
   
-  .winning-message1.show {
+.winning-message1.show {
     display: flex;
-  }
+}
 
-  .ticTitle {
+.ticTitle {
     color: black;
     text-decoration: wavy;
-    font-size: 100px;
     top: 20px;
     text-align: center;
-  }
+}
+
 /* ******** RPS SETTINGS END ******** */

@@ -12,7 +12,6 @@
     </head>
 
     <body>
-        
         <!-- *** TEMP ***-->
         <section class="randPics" id="randPics">
             <div class="funnyPic" id="funnyPic"></div>
@@ -23,28 +22,37 @@
         <div class="RPSplayerImg" id="RPSplayerPic"></div>
 
         <!-- Displays the main page title, pictures of the games, and buttons for the games-->
-        <section class="mainButtons">
-            <div class="buttons" id="hideaway">
-                <h1 class="welcomeTitle" id="welcomeTitle">The 3Game Website!!</h1>
-                <section class="arrowText">
-                    <p>Pick any game to play!</p>
-                </section>
-                <section class="arrows">
-                    <p class="ticArrow"></p>
-                    <p class="RPSarrow"></p>
-                    <p class="c4Arrow"></p>
-                </section>
-                <button class="ticButton" onclick="dissapear(); ticMain()" id="ticButton">TicTacToe!</button>
-                <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
-                <button class="c4Button" onclick="dissapear(); c4()" id="c4Button">Connect Four!</button>
-                
-            <section class="mainPics">   
-                <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
-                <img class="RPSpic" id="RPSpic" src="rpsPicc.jpg">
-                <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
-            </section> 
+        <!--<section class="mainButtons"> -->
+        <div class="buttons" id="hideaway">
+            <h1 class="welcomeTitle" id="welcomeTitle">The 3Game Website!!</h1>
+            <section class="arrowText">
+                <p>Pick any game to play!</p>
+            </section>
+            <div class="arrows">
+                <p class="ticArrow"></p>
+                <p class="RPSarrow"></p>
+                <p class="c4Arrow"></p>
             </div>
-        </section>
+            <div class="rpsMbutton">
+                <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
+            </div>
+            <div class="rpsMpic">
+                <img class="RPSpic" id="RPSpic" src="rpsPicc.jpg">
+            </div>
+            <div class="c4Mbutton">
+                <button class="c4Button" onclick="dissapear(); c4()" id="c4Button">Connect Four!</button>
+            </div>
+            <div class="c4Mpic">
+                <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
+            </div>
+            <div class="ticMbutton">
+            <button class="ticButton" onclick="dissapear(); ticMain()" id="ticButton">TicTacToe!</button>
+            </div>
+            <div class="ticMpic">   
+                <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
+            </div> 
+        </div>
+       <!-- </section> -->
 
         <!-- Displays the name box to enter the users name, the Enter button and the Reset button -->
         <center><input type="text" id="RPSnameBox" class="RPSnameBox" style="display: none;" placeholder="Enter your name"/></center>
@@ -59,7 +67,6 @@
         <h1 class="RPScompScore" id="RPScompScore"></h1>
         <div class="winning-message1" id="winningMessage1">
             <div data-winning-message-text1></div>
-            <button id="restartButton1">Restart</button>
         </div>
         <script src="./indexJS.js"></script>
 
@@ -68,7 +75,7 @@
 
     <!--****** TICTACTOE SETUP ******-->
     <body>
-        <h1 class="ticTitle" id="ticTitle" style="display: none;">TIC-TAC-TOE</h1>
+        <h1 class="ticTitle" id="ticTitle" style="display: none; font-size: 50px;" >TIC-TAC-TOE</h1>
         <div class="board" id="board">
           <div id = "cell" class="cell" data-cell></div>
           <div id = "cell1" class="cell" data-cell></div>
