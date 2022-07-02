@@ -52,7 +52,7 @@ body {
 
 .rpsMbutton {
     margin-left: -7%;
-    margin-top: -5%;
+    margin-top: -0%;
     text-align: center;
     padding: 8px;
     border-radius: 20px;
@@ -149,125 +149,8 @@ body {
     text-align: center;
     margin-top: 60%;
 }
-
-/* ****** RPS SETTINGS START ****** */
-
-.RPSnameBox {
-    font-size: 45px;
-}
-
-.RPSname {
-    color: black;
-    font-size: 90px;
-    font-weight: bolder;
-    position: absolute;
-    left: 16%;
-    top: 360px;
-    transform: translate(-50%, -50%);
-}
-
-.RPSvs {
-    color: black;
-    font-size: 60px;
-    font-weight: bold;
-    position: absolute;
-    left: 47%;
-    top: 400px;
-    transform: translate(-50%, -50%);
-    
-}
-
-.RPSopponentname {
-    color: black;
-    font-size: 90px;
-    font-weight: bolder;
-    position: absolute;
-    left: 75%;
-    top: 360px;
-    transform: translate(-50%, -50%);
-}
-
-.RPScompImg {
-    position: absolute;
-    left: 75%;
-    top: 500px;
-    transform: translate(-50%, -50%);
-}
-
-.RPSplayerImg {
-    position: absolute;
-    left: 20%;
-    top: 500px;
-    transform: translate(-50%, -50%);
-}
-
-.RPSwinner {
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: lightyellow;
-    font-size: 40px;
-}
-
-.RPSEnterButton {
-    background-color: #4CAF50; /* Green */
-    border-radius: 1px;
-    color: white;
-    padding: 15px 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    display: inline-block;
-    font-size: 30px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.RPSresetButton {
-    top: 50%;
-    background-color: red; /* Green */
-    border-radius: 1px;
-    color: black;
-    padding: 15px 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.RPSEnterButton:hover {  
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-input[type="text"]::placeholder {  
-    color: black;             
-    font-size: 25px;
-    padding-left: 10px; 
-}
-
-.RPSplayerScore {
-    color: lightgreen;
-    font-size: 30px;
-    position: absolute;
-    top: 399px;
-    left: 20%;
-    transform: translate(-50%, -50%);
-}
-
-.RPScompScore {
-    color: lightcoral;
-    font-size: 30px;
-    position: absolute;
-    top: 399px;
-    left: 76%;
-    transform: translate(-50%, -50%);
-}
-
  
-.winning-message1 {
+/* .winning-message1 {
     display: none;
     position: fixed;
     top: 50%;
@@ -299,7 +182,7 @@ input[type="text"]::placeholder {
   
 .winning-message1.show {
     display: flex;
-}
+} */
 
 .ticTitle {
     color: black;

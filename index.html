@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="3Game.css">
         <script src="./tictactoe.js"></script>
         <link rel="stylesheet" href="ticStyle.css">
+        <link rel="stylesheet" href="styleRPS.css">
+
     </head>
 
     <body>
@@ -28,11 +30,7 @@
             <section class="arrowText">
                 <p>Pick any game to play!</p>
             </section>
-            <div class="arrows">
-                <p class="ticArrow"></p>
-                <p class="RPSarrow"></p>
-                <p class="c4Arrow"></p>
-            </div>
+           
             <div class="rpsMbutton">
                 <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
             </div>
@@ -55,19 +53,21 @@
        <!-- </section> -->
 
         <!-- Displays the name box to enter the users name, the Enter button and the Reset button -->
-        <center><input type="text" id="RPSnameBox" class="RPSnameBox" style="display: none;" placeholder="Enter your name"/></center>
-        <center><button class="RPSEnterButton"  style="display: none;" onclick="RPS(); removeNameBox()" id="RPSEnterButton" name="button" value="Enter" type="submit">Enter</button></center>
+        <div id="rpsNameBox">
+            <center><input type="text" id="RPSnameBox" class="RPSnameBox" style="display: none;" placeholder="Enter your name"/></center>
+            <center><button class="RPSEnterButton"  style="display: none;" onclick="removeNameBox();RPS();" id="RPSEnterButton" name="button" value="Enter" type="submit">Enter</button></center>
+        </div>
 
         <!-- Info for the RPS game, like the user and computer name, score count and winner message -->
         <p class="RPSname" id="RPSname"></p>
         <p class="RPSvs" id="RPSvs"></p>
         <p class="RPSopponentname" id="RPSopponent"></p>
-        <p class="RPSwinner" id="RPSwinner"></p>
-        <h1 class="RPSplayerScore" id="RPSplayerScore"></h1>
-        <h1 class="RPScompScore" id="RPScompScore"></h1>
-        <div class="winning-message1" id="winningMessage1">
-            <div data-winning-message-text1></div>
-        </div>
+        <p class="makeChoice" id="rpsMakeChoice" style="display: none;">Make Your Choice!</p>
+        <button id="RPSrock" class="RPSrock" style="display: none;" onclick="RPSrock(); playerChoice(); computerChoice(); winner()">ROCK!</button>
+        <button id="RPSpaper" class="RPSpaper" style="display: none;" onclick="RPSpaper(); playerChoice(); computerChoice(); winner()">PAPER!</button>
+        <button id="RPSscissors" class="RPSscissors" style="display: none;" onclick="RPSscissors(); playerChoice(); computerChoice(); winner()">SCISSORS!</button>
+        <!--<h1 class="RPSplayerScore" id="RPSplayerScore"></h1>
+        <h1 class="RPScompScore" id="RPScompScore"></h1>-->
         <script src="./indexJS.js"></script>
 
     </body>

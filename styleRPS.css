@@ -1,0 +1,130 @@
+/* ****** RPS SETTINGS START ****** */
+
+.RPSnameBox {
+    font-size: 45px;
+}
+
+.makeChoice {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.RPSrock {
+    font-style: oblique;
+    color: black;
+    background-color: burlywood;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 50px; 
+    left: 18%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.RPSpaper {
+    font-style: oblique;
+    color: black;
+    background-color: darkkhaki;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 50px; 
+    left: 47%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.RPSscissors {
+    font-style: oblique;
+    color: black;
+    background-color: lightsalmon;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 50px; 
+    left: 80%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.RPSname {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    left: 16%;
+    top: 400px;
+    transform: translate(-50%, -50%);
+}
+
+.RPSvs {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute; 
+    left: 47%;
+    top: 460px;
+    transform: translate(-50%, -50%);
+    
+}
+
+.RPSopponentname {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute; 
+    left: 75%;
+    top: 400px;
+    transform: translate(-50%, -50%);
+}
+
+.RPScompImg {
+    position: absolute;
+    left: 75%;
+    top: 500px;
+    transform: translate(-50%, -50%);
+}
+
+.RPSplayerImg {
+    position: absolute;
+    left: 20%;
+    top: 500px;
+    transform: translate(-50%, -50%);
+}
+
+.RPSEnterButton {
+    background-color: #4CAF50; /* Green */
+    border-radius: 1px;
+    color: white;
+    padding: 15px 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+/* .RPSplayerScore {
+    color: lightgreen;
+    font-size: 30px;
+    position: absolute;
+    top: 399px;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.RPScompScore {
+    color: lightcoral;
+    font-size: 30px;
+    position: absolute;
+    top: 399px;
+    left: 76%;
+    transform: translate(-50%, -50%);
+} */
