@@ -15,7 +15,7 @@
     color: black;
     background-color: burlywood;
     font-size: 40px;
-    position: absolute;
+    position: relative;
     margin-top: 50px; 
     left: 18%;
     transform: translate(-50%, -50%);
@@ -29,7 +29,7 @@
     color: black;
     background-color: darkkhaki;
     font-size: 40px;
-    position: absolute;
+    position: relative;
     margin-top: 50px; 
     left: 47%;
     transform: translate(-50%, -50%);
@@ -43,7 +43,7 @@
     color: black;
     background-color: lightsalmon;
     font-size: 40px;
-    position: absolute;
+    position: relative;
     margin-top: 50px; 
     left: 80%;
     transform: translate(-50%, -50%);
