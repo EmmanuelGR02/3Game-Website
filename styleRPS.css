@@ -99,16 +99,27 @@
 
 .RPSEnterButton {
     background-color: #4CAF50; /* Green */
+    position: absolute;
     border-radius: 1px;
     color: white;
     padding: 15px 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     display: inline-block;
+    margin-top: 30%;
+    left: 47%;
+    transform: translate(-50%, -50%);
     font-size: 30px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+}
+
+.RPSnameBox {
+    left: 47%;
+    transform: translate(-50%, -50%);
+    margin-top: 30%;
+    position: absolute;
 }
 
 /* .RPSplayerScore {
