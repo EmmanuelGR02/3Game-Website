@@ -43,6 +43,7 @@ function ticMain() {
     let cirlceTurn
 
     startGame()
+    appearDifButtons()
 
     restartButton.addEventListener("click", startGame)
 
@@ -117,6 +118,12 @@ function ticMain() {
                 return cellElements[index].classList.contains(currentClass)
             })
         })
+    }
+
+    function appearDifButtons() {
+        document.getElementById("ticPvPbutton").style.display="block";
+        document.getElementById("ticEasyPvCbutton").style.display="block";
+        document.getElementById("ticHardPvCbutton").style.display="block";
     }
 
 }

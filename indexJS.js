@@ -100,24 +100,24 @@ function winner() {
     
     if (playerCnum == 1 && compCnum == 3) {
         playerScore ++;
-        alert(playerWin);
+        document.getElementById("RPSwinningMessage").innerHTML = playerWin;
     } else if (playerCnum == 2 && compCnum == 1) {
         playerScore ++;
-        alert(playerWin);
+        document.getElementById("RPSwinningMessage").innerHTML = playerWin;
     } else if (playerCnum == 3 && compCnum == 2) {
         playerScore ++;
-        alert(playerWin);
+        document.getElementById("RPSwinningMessage").innerHTML = playerWin;
     } else if (compCnum == 1 && playerCnum == 3) {
         compScore ++;
-        alert(compWin);
+        document.getElementById("RPSwinningMessage").innerHTML = compWin;
     } else if (compCnum == 2 && playerCnum == 1) {
         compScore ++;
-        alert(compWin);
+        document.getElementById("RPSwinningMessage").innerHTML = compWin;
     } else if (compCnum == 3 && playerCnum == 2) {
         compScore ++;
-        alert(compWin);
+        document.getElementById("RPSwinningMessage").innerHTML = compWin;
     } else {
-        alert(tie);
+        document.getElementById("RPSwinningMessage").innerHTML = tie;
     }
 }
 
@@ -135,6 +135,7 @@ function removeNameBox() {
     document.getElementById("RPSrock").style.display="block";
     document.getElementById("RPSpaper").style.display="block";
     document.getElementById("RPSscissors").style.display="block";
+    document.getElementById("RPSwinningMessage").style.display="block";
 }
 
 // ************************ END RPS GAME CODE *********************

@@ -10,6 +10,43 @@
 body { 
   margin: 0; 
 } 
+
+/* difficulty buttons */
+.ticPvPbutton {
+  margin-top: 5%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ticEasyPvCbutton {
+  margin-top: 5%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ticHardPvCbutton {
+  margin-top: 5%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
   
 .board {
   width: 100vw;

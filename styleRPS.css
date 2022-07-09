@@ -122,6 +122,15 @@
     position: absolute;
 }
 
+.RPSwinningMessage {
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    margin-top: 35%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
 /* .RPSplayerScore {
     color: lightgreen;
     font-size: 30px;
