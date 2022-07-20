@@ -1,6 +1,7 @@
 // PvP version
 function ticPvP() {
 
+    document.getElementById("ticModePick").style.display="none"
     // Display board after user picks tictactoe
     document.getElementById("board").style.display="grid";
     document.getElementById("cell").style.border = "2px solid black";
@@ -128,6 +129,7 @@ function appearTicMain() {
     document.getElementById("ticModePick").style.display="block";
     document.getElementById("ticTitle").style.display="block";
 }
+
 
 // PvC easy mode
 

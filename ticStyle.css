@@ -13,7 +13,7 @@ body {
 
 /* difficulty buttons */
 .ticPvPbutton {
-  margin-top: 3%;
+  margin-top: 20%;
   left: 30%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -25,7 +25,7 @@ body {
 }
 
 .ticEasyPvCbutton {
-  margin-top: 3%;
+  margin-top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -37,7 +37,7 @@ body {
 }
 
 .ticHardPvCbutton {
-  margin-top: 3%;
+  margin-top: 20%;
   left: 70%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -50,9 +50,9 @@ body {
 
 .ticModePick {
   color: antiquewhite;
-  font-size: 40px;
+  font-size: 30px;
   font-style: oblique;
-  margin-top: 15%;
+  margin-top: 9%;
   text-align: center;
 }
   
