@@ -1,5 +1,6 @@
-function ticMain() {
-    document.getElementById("ticTitle").style.display="block";
+// PvP version
+function ticPvP() {
+
     // Display board after user picks tictactoe
     document.getElementById("board").style.display="grid";
     document.getElementById("cell").style.border = "2px solid black";
@@ -43,7 +44,6 @@ function ticMain() {
     let cirlceTurn
 
     startGame()
-    appearDifButtons()
 
     restartButton.addEventListener("click", startGame)
 
@@ -119,12 +119,16 @@ function ticMain() {
             })
         })
     }
-
-    function appearDifButtons() {
-        document.getElementById("ticPvPbutton").style.display="block";
-        document.getElementById("ticEasyPvCbutton").style.display="block";
-        document.getElementById("ticHardPvCbutton").style.display="block";
-    }
-
 }
+
+function appearTicMain() {
+    document.getElementById("ticPvPbutton").style.display="block";
+    document.getElementById("ticEasyPvCbutton").style.display="block";
+    document.getElementById("ticHardPvCbutton").style.display="block";
+    document.getElementById("ticModePick").style.display="block";
+    document.getElementById("ticTitle").style.display="block";
+}
+
+// PvC easy mode
+
 
