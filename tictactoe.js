@@ -2,6 +2,9 @@
 function ticPvP() {
 
     document.getElementById("ticModePick").style.display="none"
+    document.getElementById("ticPvPbutton").style.display="none";
+    document.getElementById("ticEasyPvCbutton").style.display="none";
+    document.getElementById("ticHardPvCbutton").style.display="none";
     // Display board after user picks tictactoe
     document.getElementById("board").style.display="grid";
     document.getElementById("cell").style.border = "2px solid black";
