@@ -1,0 +1,95 @@
+body {
+    background-color: darkcyan;
+}
+
+/* Main Title Style */
+.mainTitle {
+    font-size: 80px;
+    text-shadow: 5px 5px 5px #FF0000, 5px 5px 5px #0000FF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Div holding the main buttons and main buttons style */
+.pickGame {
+    font-family: cursive ;
+    font-size: 40px;
+    font-weight: bolder;
+    /* text-shadow: 5px 6px 5px darkgray, 5px 10px 5px green; */
+
+}
+
+.mainButtonsDiv {
+    align-content: center;
+    justify-content: center;
+    border: 3px solid black;  
+    width: 300px;
+    height: 740px;
+    margin-top: 2%;
+    font-family: 'Itim';
+}
+.rpsButton {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightcoral;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 5px;
+    transition-duration: .5s;
+}
+.ticButton {
+    width: 225px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: cyan;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 5px;
+    transition-duration: .5s;
+}
+.c4Button {
+    width: 220px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightgreen;
+    color: solid black;
+    padding: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 5px;
+    transition-duration: .5s;
+}
+
+/* Buttons shadow */
+.rpsButton:hover {
+    box-shadow: 0 20px 20px black, 0 20px 20px 0 white;
+    background-color: lightyellow;
+}
+.ticButton:hover {
+    box-shadow: 0 20px 20px black, 0 20px 20px 0 white;
+    background-color: lightyellow;
+}
+.c4Button:hover {
+    box-shadow: 0 20px 20px black, 0 20px 20px 0 white;
+    background-color: lightyellow;
+}
+
+/* Main pictures style */
+.rpsPic {
+    width: 200px;
+    height: 120px;
+}
+.ticPic {
+    width: 190px;
+    height: 130px;
+}
+.c4Pic {
+    width: 180px;
+    height: 120px;
+}

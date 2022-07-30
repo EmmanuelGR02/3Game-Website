@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Pape Scissors</title>
+        <link rel="stylesheet" href="rpsPvpStyle.css">
+        <script src="./rpsCode.js"></script>
+    </head>
+
+    <body>
+        <!-- RPS Title -->
+        <center><div>
+            <span class="title" style="font-size: 70px; font-weight: bolder; color: darkcyan;">Rock&nbsp;</span>
+            <span class="title" style="font-size: 70px; font-weight: bolder; color: darkslategray;">Paper&nbsp;</span>
+            <span class="title" style="font-size: 70px; font-weight: bolder; color: dimgray;">Scissors&nbsp;</span>
+        </div></center>
+        <hr style="margin-bottom: 5%;">
+
+        <!-- Display placeholder for PvP -->
+        <center><div class="pvpGetNames" id="pvpGetNames" style="display: block;">
+            <input class="playerPlaceholders" id="rpsPlayer1" type="text" maxlength="8"  placeholder="Player 1 Name">
+            <button class="enter" onclick="pvcMode()">Enter</button>
+        </div></center>
+
+
+        <!-- Display players names and scores -->
+        <center><div id="scoreBoardMsg" style="display: none;">
+            <span id="scoreMsg" style="font-size: 40px; font-weight: bolder; font-family: cursive; color: white;">SCORE&nbsp;</span>
+            <span id="boardMsg" style="font-size: 40px; font-weight: bolder; font-family: cursive; color: black;">BOARD:</span>
+        </div></center>
+
+        <center><div class="pvpDisplay" id="pvpDisplay" style="display: none;">
+            <span class="player1" id="player1"></span>
+            <span class="pvpVs" id="pvpVs" style="color: white;">V</span>
+            <span class="pvpVs" id="pvpVs" style="color: black;">S</span>
+            <span class="player2" id="player2"></span>
+            <hr style="border: 5px solid black;">
+            <!-- Player1 Choice -->
+            <div class="player1Pic" id="player1Pic"></div>
+            <div style="border: 3px solid white; transform: rotate(90deg) translateX(-117px); width: 320px; "></div>
+            <!-- Player2 Choice -->
+            <div class="player2Pic" id="player2Pic"></div>
+        </div></center>
+
+        <center><div class="winningMessage" id="winningMessage" style="display: none;"></div></center>
+
+        <center><div><button id="remove" class="remove" onclick="remove()">Play Again!</button>
+        <button id="return" class="return" onclick="window.location.href='rpsGamemodes.html'">Return to Gamemodes</button></div></center>
+    </body>
+</html>

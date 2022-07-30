@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./rpsCode.js"></script>
+        <link rel="stylesheet" href="rpsStyle.css">
+    </head>
+
+    <body>
+        <!-- RPS Title -->
+        <center><div>
+            <span class="title" style="font-size: 70px; font-weight: bolder; color: darkcyan;">Rock&nbsp;</span>
+            <span class="title" style="font-size: 70px; font-weight: bolder; color: darkslategray;">Paper&nbsp;</span>
+            <span class="title" style="font-size: 70px; font-weight: bolder; color: dimgray;">Scissors&nbsp;</span>
+        </div></center>
+        <hr>
+        <center><button class="rpsReturn2Modes" id="rpsReturn2Modes" style="display: none;" onclick="window.location.href='rpsGamemodes.html'">Return to RPS Modes</button></center>
+        <!-- Display Buttons -->
+        <center><div class="buttonsDiv" id="buttonsDiv">
+            <button class="pvp" onclick="window.location.href='rpsPage.html'">Play PvP!</button>
+            <button class="pvc" onclick="window.location.href='rpsPvcPage.html'">Play PvC!</button>
+            <button class="return" onclick="window.location.href='index.html'">Return to main page</button>
+        </div></center>
+
+        <!-- Display placeholder for PvC -->
+        <center><div class="pvpGetName" id="pvpGetName" style="display: none;">
+            <input class="playerPlaceholders" id="rpsPlayerName" type="text"  placeholder="Player Name">
+            <button class="enter" onclick="window.location.href='rpsPage.html'">Enter</button>
+        </div></center>
+        
+    </body>
+
+    <!-- java script to hide the mode option buttons and display the corresponding placeholders -->
+    <script>
+
+        function pvpShow() {
+            document.getElementById("buttonsDiv").style.display="none";
+            document.getElementById("pvpGetNames").style.display="block";
+            document.getElementById("rpsReturn2Modes").style.display="block";
+        }
+        function pvcShow() {
+            document.getElementById("buttonsDiv").style.display="none";
+            document.getElementById("pvpGetName").style.display="block";
+            document.getElementById("rpsReturn2Modes").style.display="block";
+        }
+
+    </script>
+
+
+    <!-- Style for the page -->
+    <style>
+        body { background-color: lightcoral; }
+
+        /* buttons style */
+        .rpsReturn2Modes {
+            width: 200px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 15px;
+            margin: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        .buttonsDiv {
+            margin-top: 10%;
+            width: 300px;
+            height: 350px;
+            border: 10px solid black;  
+        }
+        .pvp {
+            width: 250px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            margin-bottom: 5px;
+            transition-duration: .5s;
+        }
+        .pvc {
+            width: 250px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            margin-bottom: 5px;
+            transition-duration: .5s;
+        }
+        .return {
+            width: 250px;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            margin-bottom: 5px;
+            transition-duration: .5s;
+        }
+
+        /* hover effect for buttons */
+        .pvp:hover {
+            box-shadow: 0 10px 10px white, 0 10px 10px 10px black;
+            background-color: darkcyan;
+        }
+        .pvc:hover {
+            box-shadow: 0 15px 10px white, 0 10px 10px 10px black;
+            background-color: darkslategray;
+        }
+        .return:hover {
+            box-shadow: 0 10px 10px white, 0 12px 10px 10px black;
+            background-color: dimgray;
+        }
+
+    </style>
+
+</html>

@@ -1,102 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>3Game Website</title>
-        <!-- imports the css and javascript files that are being used to display everything -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="3Game.css">
-        <script src="./tictactoe.js"></script>
-        <link rel="stylesheet" href="ticStyle.css">
-        <link rel="stylesheet" href="styleRPS.css">
 
+    <head>
+        <title>3 Game Website</title>
+        <link  rel="stylesheet" href="styleMainPage.css">
     </head>
 
     <body>
-        <!-- *** TEMP ***-->
-        <section class="randPics" id="randPics">
-            <div class="funnyPic" id="funnyPic"></div>
-        </section>
+        <!--Main title-->
+        <center><div>
+            <span class="mainTitle" style="color: lightcoral">3&nbsp;</span>
+            <span class="mainTitle" style="color: cyan;">Game&nbsp;</span>
+            <span class="mainTitle" style="color: lightgreen;">Website&nbsp;</span>
+        </div></center>
+        <hr style="border: 2px solid black; margin-bottom: 30px;">
 
-        <!-- Displays the pictures chosen by the player and computer for the RPS game-->
-        <div class="RPScompImg" id="RPScompPic"></div>
-        <div class="RPSplayerImg" id="RPSplayerPic"></div>
-
-        <!-- Displays the main page title, pictures of the games, and buttons for the games-->
-        <!--<section class="mainButtons"> -->
-        <div class="buttons" id="hideaway">
-            <h1 class="welcomeTitle" id="welcomeTitle">The 3Game Website!!</h1>
-            <section class="arrowText">
-                <p>Pick any game to play!</p>
-            </section>
-           
-            <div class="rpsMbutton">
-                <button class="RPSbutton" onclick="dissapear(); showNameBox();" id="RPSbutton">Rock Paper Scissors!</button>
-            </div>
-            <div class="rpsMpic">
-                <img class="RPSpic" id="RPSpic" src="rpsPicc.jpg">
-            </div>
-            <div class="c4Mbutton">
-                <button class="c4Button" onclick="dissapear(); c4()" id="c4Button">Connect Four!</button>
-            </div>
-            <div class="c4Mpic">
-                <img class="c4Pic" id="c4Pic" src="connect4Pic.png">
-            </div>
-            <div class="ticMbutton">
-            <button class="ticButton" onclick="dissapear(); appearTicMain()" id="ticButton">TicTacToe!</button>
-            </div>
-            <div class="ticMpic">   
-                <img class="tictactoePic" id="tictactoePic" src="tictactoePic.png">
-            </div> 
-        </div>
-       <!-- </section> -->
-
-        <!-- Displays the name box to enter the users name, the Enter button and the Reset button -->
-        <div id="rpsNameBox">
-            <center><input type="text" id="RPSnameBox" class="RPSnameBox" style="display: none;" placeholder="Enter your name"/></center>
-            <center><button class="RPSEnterButton"  style="display: none;" onclick="removeNameBox();RPS();" id="RPSEnterButton" name="button" value="Enter" type="submit">Enter</button></center>
-        </div>
-
-        <!-- Info for the RPS game, like the user and computer name, score count and winner message -->
-        <p class="RPSname" id="RPSname"></p>
-        <p class="RPSvs" id="RPSvs"></p>
-        <p class="RPSopponentname" id="RPSopponent"></p>
-        <p class="makeChoice" id="rpsMakeChoice" style="display: none;">Make Your Choice!</p>
-        <button id="RPSrock" class="RPSrock" style="display: none;" onclick="RPSrock(); playerChoice(); computerChoice(); winner()">ROCK!</button>
-        <button id="RPSpaper" class="RPSpaper" style="display: none;" onclick="RPSpaper(); playerChoice(); computerChoice(); winner()">PAPER!</button>
-        <button id="RPSscissors" class="RPSscissors" style="display: none;" onclick="RPSscissors(); playerChoice(); computerChoice(); winner()">SCISSORS!</button>
-        <h3 id="RPSwinningMessage" class="RPSwinningMessage" style="display: none;"></h3>
-        <!--<h1 class="RPSplayerScore" id="RPSplayerScore"></h1>
-        <h1 class="RPScompScore" id="RPScompScore"></h1>-->
-        <script src="./indexJS.js"></script>
+        <!-- Multicolor Pick a game Message -->
+        <center><div>
+            <span class="pickGame" style="color: lightgoldenrodyellow">Pick&nbsp;</span>
+            <span class="pickGame" style="color: lightpink;">any&nbsp;</span>
+            <span class="pickGame" style="color: lightcyan;">game&nbsp;</span>
+            <span class="pickGame" style="color: lightsteelblue">to&nbsp;</span>
+            <span class="pickGame" style="color: lightsalmon;">play!</span>
+        </div></center>
+        
+        <!-- Div holding the 3 option buttons and images -->
+        <center><div class="mainButtonsDiv">
+            <center><button class="rpsButton" id="rpsButton" onclick="window.location.href='rpsGamemodes.html'">ROCK PAPER SCISSORS</button></center>
+            <center><img class="rpsPic" id="rpsPic" src="rpsPicc.jpg"></center>
+            <hr style="border: 2px solid black;">
+            <center><button class="ticButton" id="ticButton" onclick="window.location.href='ticPage.html'">TIC-TAC-TOE</button></center>
+            <center><img class="ticPic" id="ticPic" src="tictactoePic.png"></center>
+            <hr style="border: 2px solid black;">
+            <center><button class="c4Button" id="c4Button" onclick="window.location.href='c4Page.html'">CONNECT 4</button></center>
+            <center><img class="c4Pic" id="c4Pic" src="connect4Pic.png"></center>
+        </div></center>
 
     </body>
-
-
-    <!--****** TICTACTOE SETUP ******-->
-    <body>
-        <h1 class="ticTitle" id="ticTitle" style="display: none; font-size: 70px; margin-top: 12%; position: absolute; margin-left: 29%;" >TIC-TAC-TOE</h1>
-        <!--3 buttons with 3 different difficulties for the user to pick from-->
-        <button id="ticPvPbutton" class="ticPvPbutton" style="display: none;" onclick="ticPvP()">PvP!</button>
-        <button id="ticEasyPvCbutton" class="ticEasyPvCbutton" style="display: none;">PvC (easy)!</button>
-        <button id="ticHardPvCbutton" class="ticHardPvCbutton" style="display: none;">PvC (hard)!</button>
-        <p class="ticModePick" id="ticModePick" style="display: none;">Pick A Mode to Play!</p>
-        <div class="board" id="board">
-          <div id = "cell" class="cell" data-cell></div>
-          <div id = "cell1" class="cell" data-cell></div>
-          <div id = "cell2" class="cell" data-cell></div>
-          <div id = "cell3" class="cell" data-cell></div>
-          <div id = "cell4" class="cell" data-cell></div>
-          <div id = "cell5" class="cell" data-cell></div>
-          <div id = "cell6" class="cell" data-cell></div>
-          <div id = "cell7" class="cell" data-cell></div>
-          <div id = "cell8" class="cell" data-cell></div>
-        </div>
-        <div class="winning-message" id="winningMessage">
-          <div data-winning-message-text></div>
-          <button id="restartButton">Restart</button>
-        </div>
-      </body>
 
 </html>
