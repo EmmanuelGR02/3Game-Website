@@ -11,7 +11,7 @@ body {
 
 /* Div holding the main buttons and main buttons style */
 .pickGame {
-    font-family: cursive ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     font-weight: bolder;
     /* text-shadow: 5px 6px 5px darkgray, 5px 10px 5px green; */
