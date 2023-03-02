@@ -273,13 +273,13 @@ function pvcMode() {
         //var playerChoice = playerNum();
 
         if (player1Choice == 1) {
-            img.src = "rock.jpg";
+            img.src = "./IMAGES/rock.jpg";
         }
         else if (player1Choice == 2) {
-            img.src = "paper.jpg";
+            img.src = "./IMAGES/paper.jpg";
         }
         else if (player1Choice == 3) {
-            img.src = "scissors.jpg";
+            img.src = "./IMAGES/scissors.jpg";
         }
         return div.appendChild(img);
     }
@@ -290,13 +290,13 @@ function pvcMode() {
         //var playerChoice = playerNum();
 
         if (compChoice == 1) {
-            img.src = "rock.jpg";
+            img.src = "./IMAGES/rock.jpg";
         }
         else if (compChoice == 2) {
-            img.src = "paper.jpg";
+            img.src = "./IMAGES/paper.jpg";
         }
         else if (compChoice == 3) {
-            img.src = "scissors.jpg";
+            img.src = "./IMAGES/scissors.jpg";
         }
         return div.appendChild(img);
     }
